@@ -24,7 +24,7 @@ public class SimulacionServicio {
         List<Equipos> equipos = equipoRepositorio.findAll();
         
         if (equipos.size() < 6) {
-            crearEquiposFicticios(6 - equipos.size());
+            crearEquipos(6 - equipos.size());
             equipos = equipoRepositorio.findAll(); 
         }
 
